@@ -14,10 +14,11 @@ export class RegistrationComponent implements OnInit {
   public visible: boolean = false;
   public myObject: string;
   public user: User;
+  public path:string;
   constructor(private request: RequestsService) { }
 
   ngOnInit() {
-
+    this.path = "обзор";
   }
 
   private click(event: Event){
@@ -25,6 +26,14 @@ export class RegistrationComponent implements OnInit {
     this.request.get(this.URL_PATH).subscribe((value:User) => {
       this.user = value;
     });
+  }
+
+  private reg(event:Event){
+
+  }
+
+  private savePath(e:Event){
+    console.log(e.target);
   }
 
 }

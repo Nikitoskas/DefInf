@@ -1,1 +1,11 @@
-decrypt works!
+<div class="cont">
+  <h2>
+    Для расшифровки сообщения укажите фотографию и зашифрованный текст
+  </h2>
+  <div class="form">
+    <input class="form-element" type="file" name="path" (change)="savePath($event)">
+    <textarea class="form-element c-text" placeholder="Введите зашифрованный текст"></textarea>
+    <button class="form-element" (click)="reg($event)">Расшифровать</button>
+  </div>
+</div>
+

@@ -1,9 +1,10 @@
-registration works!
-<button (click)="click($event)">My button</button>
-<div *ngIf="visible">Hello, World!</div>
-
-<div>
-  <p>Name: {{user?.name}}</p>
-  <p>Age: {{user?.age}}</p>
+<div class="cont">
+  <h2>
+    Для регистрации в системе вам понадобится только фотография
+  </h2>
+  <div class="form">
+    <input type="file" name="path" (change)="savePath($event)">
+    <button (click)="reg($event)">Зарегистрировать</button>
+  </div>
 </div>
 

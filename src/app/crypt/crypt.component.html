@@ -1,1 +1,11 @@
-crypt works!
+<div class="cont">
+  <h2>
+    Для зашифровки сообщения укажите фотографию и текст для шифрования
+  </h2>
+  <div class="form">
+    <input class="form-element" type="file" name="path" (change)="savePath($event)">
+    <textarea class="form-element c-text" placeholder="Введите текст для зашифрования"></textarea>
+    <button class="form-element" (click)="reg($event)">Зашифровать</button>
+  </div>
+</div>
+

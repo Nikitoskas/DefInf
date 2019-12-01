@@ -11,6 +11,7 @@ import { DecryptComponent } from './decrypt/decrypt.component';
 import { AboutComponent } from './about/about.component';
 import { DevelopersComponent } from './developers/developers.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {FormsModule} from '@angular/forms';
 
 const appRoutes = [
   {path: ``, redirectTo: '/registration', pathMatch: 'full'},
@@ -37,7 +38,8 @@ const appRoutes = [
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

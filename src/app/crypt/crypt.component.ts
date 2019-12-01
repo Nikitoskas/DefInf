@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CryptComponent implements OnInit {
 
+  private text:string;
   constructor() { }
 
   ngOnInit() {
